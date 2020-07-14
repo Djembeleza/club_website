@@ -1,0 +1,111 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --maroon: #72053f;
+    --medium-violet-red: #d00e8c;
+    --black: #180d15;
+    --lavender: #ebd3ef;
+    --dodger-blue: #1ca9e8;
+}
+
+body {
+    position: relative;
+    background-color: var(--black);
+}
+
+.club-img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    position: absolute;
+    top: 0;
+}
+
+/* Style the Navigation */
+.main-nav {
+    position: absolute;
+    overflow: hidden;
+    width: 0rem;
+    color: var(--lavender);
+    background-color: var(--dodger-blue);
+    text-align: center;
+    height: 100vh;
+    z-index: 1;
+    transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.nav-list {
+    list-style: none;
+}
+.nav-item a {
+    text-decoration: none;
+    font-size: 3rem;
+    line-height: 5rem;
+    display: inline-block;
+}
+
+
+.club-title {
+    text-transform: capitalize;
+    width: 100vw;
+    text-align: center;
+    color: var(--lavender);
+}
+
+.open, .close {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* End Navigation Style */
+
+.business-details {
+    color: var(--medium-violet-red);
+    background-color: var(--black);
+    text-align: center;
+}
+
+.business-div h2 {
+    font-size: 3rem;
+
+    margin-bottom: 0.6rem;
+}
+
+.business-hours {
+    list-style: none;
+    padding: 1rem;
+    text-align: left;
+}
+
+.dateItem > b {
+    margin-right: 1rem;
+}
+
+/* Style Footer */
+footer {
+    text-align: center;
+    color: var(--dodger-blue);
+    background-color: var(--maroon);
+}
+
+.location {
+    margin: 0.8rem 0;
+}
+
+a[href^='mailto'] {
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+a[href^='mailto']:hover {
+    text-transform: uppercase;
+}
+/* End Footer Styles */
+
+
+
