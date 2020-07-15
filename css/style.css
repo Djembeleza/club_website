@@ -32,17 +32,18 @@ header {
     position: absolute;
     overflow: hidden;
     width: 0rem;
+    background-image: linear-gradient(10deg, var(--lavender), var(--dodger-blue), var(--medium-violet-red));
     background-color: var(--lavender);
     text-align: center;
     height: 100vh;
-    z-index: 1;
+    z-index: 100;
     transition: 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .nav-list {
     list-style: none;
 }
 .nav-item a {
-    transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: 3s cubic-bezier(0.19, 1, 0.22, 1);
     text-decoration: none;
     font-size: 3rem;
     line-height: 5rem;
@@ -53,10 +54,10 @@ header {
 
 .nav-item a:visited {
     text-transform: uppercase;
-    text-decoration: line-through;
+    text-decoration: line-through solid var(--lavender) 0.2rem;
 }
 .nav-item a:focus, .nav-item a:hover {
-    font-weight: 600;
+    text-decoration: underline wavy var(--medium-violet-red) 0.2rem;
 }
 
 
@@ -112,11 +113,6 @@ header {
     padding-left: 3.4rem;
 }
 
-.subscribe-form input:focus {
-    border-bottom: 0.2rem groove var(--dodger-blue);
-    margin-bottom: 1rem;
-}
-
 .subscribe-form button[type='submit'] {
     transition: 0.5s cubic-bezier(0.6, 0.04, 0.98, 0.335);
     padding: 1rem 1.5rem;
@@ -128,8 +124,14 @@ header {
     color: var(--medium-violet-red);
 }
 
+.subscribe-form input:focus {
+    border-bottom: 0.2rem groove var(--dodger-blue);
+    margin-bottom: 1rem;
+}
+
+
 .subscribe-form button[type='submit']:hover {
-    text-decoration: underline wavy 0.2rem;
+    text-transform: uppercase;
 }
 /* Style Footer */
 footer {
@@ -146,6 +148,12 @@ footer {
 }
 .contact-us p {
 margin-bottom: 0.6rem;
+}
+
+.contact-us .google-map iframe {
+    width: 80%;
+    padding: 0.4rem;
+    border: 0.4rem thin var(--lavender);
 }
 
 small p {
