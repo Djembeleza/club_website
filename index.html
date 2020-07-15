@@ -11,9 +11,9 @@
 <body>
     <img src="images/sam-mar-OQOKSsj8QME-unsplash.jpg" alt="Club Lifestyle" class="club-img">
     <header>
-        <h1 class="club-title">Da vinn lifestyle lounge <span class="open fas fa-bars"></span></h1>
+        <h1 class="club-title">Da vinn lifestyle lounge <span class="open fas fa-bars">Open</span></h1>
         <nav class="main-nav">
-            <span class="close fas fa-window-close"></span>
+            <span class="close fas fa-window-close">Close</span>
             <ul class="nav-list">
                 <li class="nav-item"><a href="#">Home</a></li>
                 <li class="nav-item"><a href="#">The Venue</a></li>
@@ -27,22 +27,29 @@
 
     <section class="business-details">
         <div class="business-div">
-            <h2>Open Hours</h2>
+            <h2>Operating Hours</h2>
             <ul class="business-hours">
-                <li class="dateItem"><b>Mon: </b><time>10pm</time> til late</li>
-                <li class="dateItem"><b>Tues: </b><time>10pm</time> til late</li>
+                <li class="dateItem"><b>Mon - Fri: </b><time>8pm</time> til <time>12am</time></li>
+                <!-- <li class="dateItem"><b>Tues: </b><time>10pm</time> til late</li>
                 <li class="dateItem"><b>Wed: </b><time>10pm</time> til late</li>
                 <li class="dateItem"><b>Thur: </b><time>10pm</time> til late</li>
-                <li class="dateItem"><b>Fri: </b><time>10pm</time> til late</li>
+                <li class="dateItem"><b>Fri: </b><time>10pm</time> til late</li> -->
                 <li class="dateItem"><b>Sat: </b><time>10pm</time> til late</li>
                 <li class="dateItem"><b>Sun: </b><time>10pm</time> til late</li>
             </ul>
         </div>
     </section>
+
+    <section class="newsletter">
+        <h2>Newsletter</h2>
+        <p>Subscribe to our email newsletter to get update, discount and special offers.</p>
+        <form action="" class="subscribe-form">
+            <input type="email" name="email" id="email" required placeholder="example@domain.co.za">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
     <footer>
-        <small>
-            <p>Copyright <i class="far fa-copyright"></i></p>
-            <p>
+        <div class="contact-us">
             <address class="location">
                 544 Block X<br>
                 Soshanguve<br>
@@ -50,7 +57,11 @@
                 Tshwane<br>
                 South Africa<br>
             </address>
-            </p>
+            <p>Call: +2764 865 9951</p>
+        </div>
+
+        <small>
+            <p>Copyright <i class="far fa-copyright"></i> 2020</p>
             <p>Coded by <a href="mailto:lkaola11@gmail.com">Djembeleza</a></p>
         </small>
     </footer>

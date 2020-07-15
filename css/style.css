@@ -32,8 +32,7 @@ header {
     position: absolute;
     overflow: hidden;
     width: 0rem;
-    color: var(--lavender);
-    background-color: var(--dodger-blue);
+    background-color: var(--lavender);
     text-align: center;
     height: 100vh;
     z-index: 1;
@@ -43,18 +42,32 @@ header {
     list-style: none;
 }
 .nav-item a {
+    transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
     text-decoration: none;
     font-size: 3rem;
     line-height: 5rem;
+    width: 100%;
+    color: var(--black);
     display: inline-block;
+}
+
+.nav-item a:visited {
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+.nav-item a:focus, .nav-item a:hover {
+    font-weight: 600;
 }
 
 
 .club-title {
+    transition: 800ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
     text-transform: capitalize;
     width: 100vw;
     text-align: center;
     color: var(--lavender);
+    position: absolute;
+    padding: 0.5rem 1rem 0;
 }
 
 .open, .close {
@@ -64,43 +77,85 @@ header {
 
 /* End Navigation Style */
 
-.business-details {
+.business-details , .newsletter {
+    padding: 1.8rem;
     color: var(--medium-violet-red);
     background-color: var(--black);
     text-align: center;
 }
 
-.business-div h2 {
+.business-div h2, .newsletter h2 {
     font-size: 3rem;
-
     margin-bottom: 0.6rem;
 }
 
+.newsletter p {
+    margin-bottom: 1.06rem;
+    font-size: 1.05rem;
+}
 .business-hours {
     list-style: none;
-    padding: 1rem;
+    padding: 1rem 1rem 0;
     text-align: left;
+    line-height: 1.8rem;
 }
 
 .dateItem > b {
     margin-right: 1rem;
 }
 
+.subscribe-form input {
+    transition: 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    width: 100%;
+    height: 2.6rem;
+    margin-bottom: 0.8rem;
+    padding-left: 3.4rem;
+}
+
+.subscribe-form input:focus {
+    border-bottom: 0.2rem groove var(--dodger-blue);
+    margin-bottom: 1rem;
+}
+
+.subscribe-form button[type='submit'] {
+    transition: 0.5s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    padding: 1rem 1.5rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    background-color: var(--lavender);
+    color: var(--medium-violet-red);
+}
+
+.subscribe-form button[type='submit']:hover {
+    text-decoration: underline wavy 0.2rem;
+}
 /* Style Footer */
 footer {
     text-align: center;
+    margin-top: 0.65rem;
     color: var(--dodger-blue);
     background-color: var(--maroon);
+    display: flex;
+    flex-direction: column;
 }
 
 .location {
     margin: 0.8rem 0;
 }
+.contact-us p {
+margin-bottom: 0.6rem;
+}
 
+small p {
+    margin: 0 0 0.2rem;
+}
 a[href^='mailto'] {
     text-decoration: none;
     color: yellowgreen;
 }
+
 
 a[href^='mailto']:hover {
     text-transform: uppercase;
